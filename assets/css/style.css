@@ -1,0 +1,922 @@
+
+/*********************  Default-CSS  *********************/
+:root {
+    scroll-behavior: unset;
+}
+
+@font-face {
+    font-family: UlmGrotesk-RE;
+    src: url(../fonts/FontsFree-Net-UlmGrotesk-Regular.ttf);
+}
+@font-face {
+    font-family: UlmGrotesk-EB;
+    src: url(../fonts/FontsFree-Net-UlmGrotesk-Extrabold.ttf);
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+body {
+  	margin: 0;
+	font-family: UlmGrotesk-RE;
+  	overflow-x: hidden;
+  	color: #000000;
+  	font-size: 18px;
+	line-height: 1.4;
+	background-color: #06225F;
+}
+a,
+span,
+a:hover,
+a:active,
+button {
+	text-decoration: none;
+}
+a,
+div a:hover,
+div a:active,
+div a:focus,
+button {
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+p {
+  	margin: 0;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+	margin: 0;
+}
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width: 100%;
+}
+.cm-overflow{
+	overflow: hidden;
+	touch-action: unset;
+}
+.row{
+	margin: 0 -15px;
+}
+.container{
+	padding: 0 15px;
+}
+.col, [class*=col-]{
+	padding: 0 15px;
+}
+/*********************  Default-CSS  End *********************/
+.main_wrapper{
+	overflow: hidden;
+}
+/*============== Header Css Start ===============*/
+.d_logo{
+	font-family: UlmGrotesk-EB;
+	font-size: 45px;
+	font-weight: 800;
+	color: #0C5EF6;
+	line-height: 1;
+}
+.in_header_wrapper{
+	padding: 58px 0 0;
+	position: absolute;
+    top: 0;
+    left: 0;
+	width: 100%;
+    display: inline-block;
+	z-index: 99;
+}
+.m_logo{
+	display: none;
+}
+.in_header_block,
+.menu_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.in_header_block{
+	position: relative;
+}
+.in_header_wrapper .container{
+	position: relative;
+}
+.in_header_wrapper .container::before {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 32px;
+    width: 40%;
+    height: 2px;
+    background-color: #000000;
+    opacity: 0.25;
+	z-index: 0;
+}
+.menu_block ul li {
+    display: inline-block;
+    padding-bottom: 6px;
+}
+.menu_block ul li:not(:last-child) {
+    margin-right: 37px;
+}
+.logo_hold{
+	width: 144px;
+}
+.menu_block{
+	width: calc(100% - 144px);
+	padding-left: 207px;
+}
+.menu_block ul li a,
+.menu_btn a{
+	font-family: UlmGrotesk-RE;
+	font-size: 15px;
+	line-height: 1;
+	color: #000000;
+	position: relative;
+	font-weight: 400;
+}
+.menu_btn a{
+	font-family: UlmGrotesk-EB;
+	font-weight: 800;
+}
+.menu_block ul li a::before,
+.menu_btn a::before{
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left:50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	background-color: #0C5EF6;
+	width: 0;
+	height: 1px;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.menu_block ul li a:hover,
+.menu_btn a:hover{
+	color: #0C5EF6;
+}
+.menu_block ul li a:hover::before,
+.menu_btn a:hover::before{
+	width: 100%;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.menu_toggle_btn span:nth-child(2){
+	display: none;
+}
+/*============== Header Css End ===============*/
+
+/*============== Banner Css Start ===============*/
+/* 
+    font-family: UlmGrotesk-RE;
+	font-family: UlmGrotesk-EB;
+	font-family: 'Montserrat', sans-serif;
+*/
+
+#banner_section{
+	padding-top: 334px;
+	padding-bottom: 173px;
+	background: #f1f1f1;
+	position: relative;
+	overflow: hidden;
+}
+#banner_section .row{
+	align-items: center;
+	position: relative;
+}
+.banner_title{
+	font-family: UlmGrotesk-EB;
+	font-weight: 800;
+	font-size: 45px;
+	color: #000;
+	line-height: 1.2;
+}
+.banner_sub_title{
+	font-family: UlmGrotesk-RE;
+	font-weight: 400;
+	font-size: 20px;
+	color: #000;
+	letter-spacing: -0.3em;
+	max-width: 230px;
+	line-height: 1.3;
+	margin-bottom: 30px;
+}
+.development_sof_wrap{
+	margin-bottom: 68px;
+}
+.development_softwares{
+	font-family: UlmGrotesk-RE;
+	font-weight: 400;
+	font-size: 15px;
+	color: #000;
+	line-height: 1.3;
+	margin-bottom: 10px;
+}
+.client_logo{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 395px;
+}
+.client_logo li a img{
+	-webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.client_logo li a:hover img{
+	transform: translateY(-2px);
+	-webkit-transform: translateY(-2px);
+	-moz-transform: translateY(-2px);
+	-ms-transform: translateY(-2px);
+	-o-transform: translateY(-2px);
+}
+.bannre_btn > a{
+	font-family: UlmGrotesk-EB;
+	font-size: 30px;
+	line-height: 1.5;
+	text-align: left;
+	color: #fff;
+	padding: 20px 40px;
+	border-radius: 10px;
+	background: #0c5ef6;
+	display: inline-block;
+}
+.bannre_btn > a:hover{
+	transform: translateY(-5px);
+}
+.slider-counter {
+    font-family: UlmGrotesk-EB;
+    font-weight: 600;
+    font-size: 13px;
+    color: #000;
+    display: flex;
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    -moz-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+    -o-writing-mode: vertical-lr;
+    justify-content: center;
+    position: absolute;
+    right: -40px;
+    bottom: -100px;
+}
+.count-lines {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 50px;
+    background: #000000;
+    margin: 17px auto;
+    border-radius: 30px;
+}
+.right-side-buttom-section{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 60px 28px;
+	background-color: #fff;
+}
+.right-side-buttom-section svg{
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.right-side-buttom-section:hover svg{
+    transform: translateY(10px);
+}
+.ban_bg{
+	position: absolute;
+	top: 50%;
+	right: 54px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+.cm_parallax_effect {
+    display: flex;
+}
+.cm_parallax_effect h2{
+	font-weight: normal;
+	font-size: 350px;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    -moz-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+    -o-writing-mode: vertical-lr;
+	line-height: 1.22;
+}
+.left_text_p{
+    position: absolute;
+    right: 44%;
+    bottom: -104px;
+}
+.right_text_p {
+    position: absolute;
+    right: 213px;
+    top: -60px;
+}
+.m_screen{
+	display: none;
+}
+.owl-nav{
+	display: none;
+}
+/*============== Banner Css End ===============*/
+
+
+/*============== Our Services Css Start ===============*/
+#our_services {
+    padding-top: 95px;
+    padding-bottom: 90px;
+    background-color: #FFFFFF;
+	position: relative;
+	z-index: 9;
+}
+.section_title h2{
+	font-family: UlmGrotesk-RE;
+	text-align: center;
+	font-size: 55px;
+	line-height: 0.8;
+	color: #000;
+}
+#our_services .row{
+	padding-top: 108px;
+	position: relative;
+	z-index: 99;
+	margin: 0 -35px;
+}
+#our_services .row > div{
+	padding: 0 35px;
+}
+.our_services_wrap{
+	border-radius: 10px 80px 10px 10px;
+	box-shadow: 10px 70px 90px rgba(0, 0, 0, 0.16);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 100%;
+}
+.green_box {
+	padding-top: 26px;
+    background-image: url(../images/green_bg.png);
+}
+.blue_box{
+	padding-top: 21px;
+    background-image: url(../images/blue_bg.png);
+}
+.purple_box{
+	padding-top: 47px;
+    background-image: url(../images/purple_bg.png);
+}
+.service_details{
+	padding: 0px 40px 44px;
+}
+.our_services_img{
+	text-align: center;
+}
+.service_details_title {
+    font-family: UlmGrotesk-EB;
+    font-size: 34px;
+    text-align: center;
+    color: #00c586;
+    letter-spacing: -2px;
+    font-weight: 800;
+}
+.blue_box .service_details_title{
+	color: #0C5EF6;
+}
+.purple_box .service_details_title{
+	color: #7A21F5;
+}
+.service_details{
+	margin-top: -5px;
+}
+.service_d_item{
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 5px;
+	background: #fff;
+	box-shadow: 0px 10px 33px rgba(0, 0, 0, 0.11);
+	display: flex;
+	align-items: center;
+	height: 100%;
+    min-height: 70px;
+	margin-top: 20px;
+	max-width: 270px;
+}
+.service_d_icon{
+	padding-right: 10px;
+}
+.service_d_text{
+	padding-left: 22px;
+	border-left: 1px solid rgba(112, 112, 112, 0.5);
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+.service_d_text h3 {
+    font-family: UlmGrotesk-EB;
+    font-size: 17px;
+    font-weight: 800;
+    color: #000;
+    letter-spacing: -2px;
+}
+.section_title h2 span{
+	font-family: UlmGrotesk-EB;
+	font-weight: 800;
+}
+.rp_btn{
+	padding-top: 104px;
+	text-align: center;
+	position: relative;
+	z-index: 99;
+}
+.rp_btn a{
+	border-radius: 10px;
+	background: transparent;
+	border: 2px solid #000;
+	display: inline-block;
+	font-size: 30px;
+	line-height: 1.5;
+	text-align: left;
+	color: #000;	
+	font-family: UlmGrotesk-RE;
+	font-weight: 800;
+	padding: 20px 64px;
+}
+.rp_btn a:hover{
+	background: #0C5EF6;
+	border-color: #0C5EF6;
+	color: #f1f1f1;
+	transform: translateY(-5px);
+}
+.services_bg_text{
+	position: absolute;
+	bottom: 68px;
+	left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+	z-index: 0;
+	pointer-events: none;
+}
+.services_bg_text h2{
+	font-family: UlmGrotesk-EB;
+	font-weight: normal;
+	font-weight: 800;
+	font-size: 450px;
+	line-height: 1.3;
+	text-align: left;
+	color: #000;
+	opacity: 0.05;
+}
+/*============== Our Services Css End ===============*/
+
+/*============== Workflow Css Start ===============*/
+#workflow_wrap{
+	padding-top: 114px;
+	padding-bottom: 109px;
+	position: relative;
+}
+#workflow_wrap::after {
+    content: "";
+    position: absolute;
+    top: 235px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #FFFFFF;
+    width: 1px;
+    height: 84.5%;
+    border: 2px solid #FFFFFF;
+	border-radius: 5px;
+}
+#workflow_wrap .section_title h2{
+	font-family: UlmGrotesk-EB;
+	font-weight: 800;
+	color: #fff;
+	margin-bottom: 25px;
+}
+#workflow_wrap .section_title p,
+.workflow_title{
+	font-family: UlmGrotesk-RE;
+	font-weight: 400;
+	color: #FFFFFF;
+	line-height: 1.5;
+	font-size: 30px;
+	text-align: center;
+}
+#workflow_wrap .section_title{
+	padding-bottom: 102px;
+}
+.workflow_in_wrap{
+	padding: 0 41px;
+}
+#workflow_wrap .row{
+	position: relative;
+}
+.circle_wrap{
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #06225F;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	width: 35px;
+	height: 35px;
+	padding: 0;
+	z-index: 50;
+}
+.circle_in_wrap{
+	width: 15px;
+	height: 15px;
+	background-color: #FFFFFF;
+	border-radius: 50px;
+}
+#workflow_wrap .container{
+	position: relative;
+}
+#workflow_wrap .container > .circle_wrap{
+    top: auto;
+    bottom: -83px;
+} 
+.workflow_title{
+	margin-bottom: 25px;
+}
+.Workflow_detail{
+	border-radius: 10px 80px 10px 10px;
+    box-shadow: 10px 70px 90px rgb(0 0 0 / 16%);
+	background-color: rgb(255 255 255 / 10%);
+}
+.Workflow_detail p{
+	padding: 53px 0;
+	font-family: UlmGrotesk-RE;
+	font-weight: 400;
+	font-size: 25px;
+	color: #fff;
+	line-height: 1.8;
+	margin: 0 auto;
+}
+.Workflow_detail_1{
+	max-width: 404px;
+}
+.Workflow_detail_2{
+	max-width: 421px;
+}
+.Workflow_detail_3{
+	max-width: 491px;
+}
+.Workflow_detail_4{
+	max-width: 451px;
+}
+#workflow_wrap .secund_row_wrap,
+#workflow_wrap .third_row_wrap{
+	margin-top: -70px;
+}
+/*============== Workflow Css End ===============*/
+
+/*============== Launch Project Css Start ===============*/
+#launch_project_wrap{
+	padding-top: 15px;
+	position: relative;
+}
+#launch_project_wrap .section_title h2{
+	font-family: UlmGrotesk-RE;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px;
+}
+#launch_project_wrap .section_title h2 b{
+	font-family: UlmGrotesk-EB;
+}
+.launch_project_deatils{
+	position: relative;
+	z-index: 99;
+}
+.launch_project_deatils p{
+	font-family: UlmGrotesk-RE;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 1.6;
+	color: #fff;
+	max-width: 980px;
+	text-align: center;
+	margin: 0 auto 30px;
+}
+.section_main_text {
+    position: absolute;
+    bottom: 27%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    z-index: 0;
+	pointer-events: none;
+}
+.section_main_text h2{
+	font-size: 450px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: rgba(255 255 255 / 5%);
+	text-align: center;
+}
+/*============== Launch Project Css End ===============*/
+
+/*============== Previous Projects Css Start ===============*/
+.previous_wrapper{
+    margin-top: -28px;
+}
+.previous_block a{
+    display: inline-block;
+}
+.previous_block a:hover{
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+}
+.previous_title h2{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+}
+.previous_title h2 span{
+    font-family: UlmGrotesk-EB;
+}
+.previous_wrap {
+    padding: 82px 0;
+    background: rgba(255, 255, 255, 0.10);
+    width: 100%;
+    margin-top: 44px;
+}
+.previous_block ul{
+    display: flex;
+    align-items: center;
+	justify-content: space-between;
+    margin: 0 -34px;
+    flex-wrap: wrap;
+}
+/*============== Previous Projects Css End ===============*/
+
+/*============== Contact Us Css Start ===============*/
+.contact_wrapper{
+    padding: 88px 0 200px 0;
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+.contact_title h2{
+    color: #fff;
+    font-size: 50px;
+    font-family: UlmGrotesk-RE;
+}
+.contact_title h2 span{
+    font-family: UlmGrotesk-EB;
+}
+.contact_title p{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 23px;
+}
+.frm_wrapper .frm_title{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 96px;
+}
+.frm_col{
+    margin-top: 39px;
+}
+.frm_col .frm_wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -17px;
+}
+.frm_col .frm_wrap li{
+    padding: 17px;
+    width: 50%;
+}
+.frm_col .frm_wrap p{
+    font-size: 25px;
+    text-align: left;
+    color: #fff;
+}
+.frm_col .frm_wrap input:focus, .frm_textarea textarea:focus{
+    outline: none;
+}
+.frm_col input{
+    width: 100%;
+    height: 59px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 11px;
+	border: none;
+}
+.frm_textarea p{
+    font-size: 25px;
+    text-align: left;
+    color: #fff;
+    margin-top: 41px;
+}
+.frm_textarea textarea{
+    margin-top: 11px;
+    width: 100%;
+    height: 299px;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+} 
+.contact_menu p{
+    font-size: 30px;
+    text-align: left;
+    color: #fff;
+    margin-top: 41px;
+}
+.contact_menu_col{
+    margin-top: 41px;
+}
+.contact_menu_col ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -17px;
+}
+.contact_menu_col ul li{
+    padding: 17px;
+    width: 33.33%;
+}
+.contact_menu_col ul li .check_box_g{
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    border: 2px solid #fff;
+    width: 100%;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+	overflow: hidden;
+}
+.contact_menu_col ul li label span,
+.contact_menu_col ul li label{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 102%;
+    height: 102%;
+}
+.message_btn a{
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    background: #0C5EF6;
+    margin-top: 71px;
+    padding: 18px 0;
+    border-radius: 10px;
+    font-family: UlmGrotesk-EB;
+}
+.message_btn a:hover{
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+.contact_menu_col ul li input {
+	opacity: 0;
+	z-index: -1;
+	position: absolute;
+}
+.contact_menu_col ul li input[type="checkbox"]:checked + span {
+	color: #000000;
+    background: #fff;
+    font-weight: 800;
+}
+/*============== Contact Us Css End ===============*/
+
+/*============== Footer Css Start ===============*/
+.footer_wrap{
+    text-align: center;
+}
+.footer_block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 39px;
+    border-top: 1px solid #fff;
+    padding: 39px 0 68px 0;
+    flex-wrap: wrap;
+}
+.footer_menu{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer_menu li + li{
+    margin-left: 55px;
+}
+.footer_menu li a{
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+    transition: all 0.4s ease;
+	position: relative;
+}
+.footer_menu li a:hover{
+    color: #0c5ef6;
+}
+.copy_text p{
+    color: #fff;
+    font-size: 30px;
+}
+.copy_text p a{
+    display: inline-block;
+    color: #fff;
+    transition: all 0.4s ease;
+	position: relative;
+}
+.copy_text p a:hover{
+    color: #0c5ef6;
+}
+.footer_menu li a::before, .copy_text p a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background-color: #0C5EF6;
+    width: 0;
+    height: 1px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.copy_text p a:hover::before, .footer_menu li a:hover::before {
+    width: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+/*============== Footer Css End ===============*/

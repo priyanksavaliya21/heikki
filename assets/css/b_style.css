@@ -1,0 +1,652 @@
+
+/*********************  Default-CSS  *********************/
+:root {
+    scroll-behavior: unset;
+}
+
+@font-face {
+    font-family: UlmGrotesk-RE;
+    src: url(../fonts/FontsFree-Net-UlmGrotesk-Regular.ttf);
+}
+@font-face {
+    font-family: UlmGrotesk-EB;
+    src: url(../fonts/FontsFree-Net-UlmGrotesk-Extrabold.ttf);
+}
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0
+}
+body {
+  	margin: 0;
+	font-family: UlmGrotesk-RE;
+  	overflow-x: hidden;
+  	color: #000000;
+  	font-size: 18px;
+	line-height: 1.4;
+	background-color: #06225F;
+}
+a,
+span,
+a:hover,
+a:active,
+button {
+	text-decoration: none;
+}
+a,
+div a:hover,
+div a:active,
+div a:focus,
+button {
+	text-decoration: none;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+p {
+  	margin: 0;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+	margin: 0;
+}
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width: 100%;
+}
+.cm-overflow{
+	overflow: hidden;
+	touch-action: unset;
+}
+.row{
+	margin: 0 -15px;
+}
+.container{
+	padding: 0 15px;
+}
+.col, [class*=col-]{
+	padding: 0 15px;
+}
+/*********************  Default-CSS  End *********************/
+
+/*============== Header Css Start ===============*/
+/*============== Header Css End ===============*/
+
+
+/* 
+    font-family: UlmGrotesk-RE;
+	 font-family: UlmGrotesk-EB;
+	 font-family: 'Montserrat', sans-serif;
+*/
+
+
+/*============== Previous Projects Css Start ===============*/
+.previous_wrapper{
+    margin-top: -28px;
+}
+.previous_block a{
+    display: inline-block;
+}
+.previous_title h2{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+}
+.previous_title h2 span{
+    font-family: UlmGrotesk-EB;
+}
+.previous_wrap {
+    padding: 82px 0;
+    background: rgba(255, 255, 255, 0.10);
+    width: 100%;
+    margin-top: 44px;
+}
+.previous_block{
+    max-width: 1623px;
+    margin: auto;
+}
+.previous_block ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -34px;
+    flex-wrap: wrap;
+}
+.previous_block ul li:not(:last-child) {
+    width: auto;
+    margin-right: 89px;
+}
+.previous_block ul li:nth-child(2),.previous_block ul li:nth-child(3){
+    margin-right:68px;
+}
+/*============== Previous Projects Css End ===============*/
+
+/*============== Contact Us Css Start ===============*/
+.contact_wrapper{
+    padding: 88px 0 200px 0;
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+.contact_title h2{
+    color: #fff;
+    font-size: 50px;
+    font-family: UlmGrotesk-RE;
+}
+.contact_title h2 span{
+    font-family: UlmGrotesk-EB;
+}
+.contact_title p{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 23px;
+}
+.frm_wrapper .frm_title{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 96px;
+}
+.frm_col{
+    margin-top: 39px;
+}
+.frm_col .frm_wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -17px;
+}
+.frm_col .frm_wrap li{
+    padding: 17px;
+    width: 50%;
+}
+.frm_col .frm_wrap p{
+    font-size: 25px;
+    text-align: left;
+    color: #fff;
+}
+.frm_col .frm_wrap input:focus, .frm_textarea textarea:focus{
+    outline: none;
+}
+.frm_col input{
+    width: 100%;
+    height: 59px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 11px;
+}
+.frm_textarea p{
+    font-size: 25px;
+    text-align: left;
+    color: #fff;
+    margin-top: 41px;
+}
+.frm_textarea textarea{
+    margin-top: 11px;
+    width: 100%;
+    height: 299px;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+} 
+.contact_menu p{
+    font-size: 30px;
+    text-align: left;
+    color: #fff;
+    margin-top: 41px;
+}
+.contact_menu_col{
+    margin-top: 41px;
+}
+.contact_menu_col ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -17px;
+}
+.contact_menu_col ul li{
+    padding: 17px;
+    width: 33.33%;
+}
+.contact_menu_col ul li a{
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    border: 2px solid #fff;
+    width: 100%;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+.contact_menu_col ul li a:hover{
+    color: #000000;
+    background: #fff;
+    font-weight: 800;
+}
+.message_btn a{
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    background: #0C5EF6;
+    margin-top: 71px;
+    padding: 18px 0;
+    border-radius: 10px;
+    font-family: UlmGrotesk-EB;
+}
+.message_btn a:hover{
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+/*============== Contact Us Css End ===============*/
+
+/*============== Footer Css Start ===============*/
+.footer_wrap{
+    text-align: center;
+}
+.footer_block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 39px;
+    border-top: 1px solid #fff;
+    padding: 39px 0 68px 0;
+    flex-wrap: wrap;
+}
+.footer_menu{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer_menu li + li{
+    margin-left: 55px;
+}
+.footer_menu li a{
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+    transition: all 0.4s ease;
+}
+.footer_menu li a:hover{
+    color: #00C586;
+}
+.copy_text p{
+    color: #fff;
+    font-size: 30px;
+}
+.copy_text p a{
+    display: inline-block;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+.copy_text p a:hover{
+    color: #00C586;
+}
+/*============== Footer Css End ===============*/
+
+
+
+
+
+/* @media (min-width: 1440px){
+    .container{
+        max-width: 1330px;
+    }
+} */
+
+
+@media (max-width: 1199px){
+    .footer_menu li a{
+        font-size: 20px;
+    }
+    .footer_menu li + li {
+        margin-left: 40px;
+    }
+    .copy_text p{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 991px){
+    .contact_wrapper{
+        padding: 65px 0 100px 0;
+    }
+    .contact_title h2{
+        font-size: 38px;
+    }
+    .contact_title p {
+        font-size: 23px;
+        margin-top: 17px;
+    }
+    .frm_wrapper .frm_title {
+        font-size: 23px;
+        margin-top: 55px;
+    }
+    .frm_col {
+        margin-top: 30px;
+    }
+    .frm_col .frm_wrap p{
+        font-size: 18px;
+    }
+    .frm_col input{
+        font-size: 16px;
+        height: 45px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    .frm_textarea p{
+        font-size: 18px;
+        margin-top: 25px;
+    }
+    .frm_textarea textarea{
+        height: 180px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    .contact_menu p {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+    .contact_menu_col{
+        margin-top: 25px;
+    }
+    .contact_menu_col ul li a{
+        font-size: 18px;
+        height: 48px;
+    }
+    .message_btn a {
+        font-size: 24px;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    .footer_block {
+        margin-top: 25px;
+        padding: 25px 0 40px 0;
+    }
+    .footer_logo {
+        display: inline-block;
+        max-width: 140px;
+    }
+    .footer_menu li a{
+        font-size: 16px;
+    }
+    .footer_menu li + li {
+        margin-left: 30px;
+    }
+    .copy_text p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px){
+    .contact_wrapper{
+        padding: 50px 0 80px 0;
+    }
+    .contact_title h2{
+        font-size: 30px;
+    }
+    .contact_title p {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .frm_wrapper .frm_title {
+        font-size: 20px;
+        margin-top: 45px;
+    }
+    .frm_col {
+        margin-top: 22px;
+    }
+    .frm_col .frm_wrap li{
+        padding: 0 7px;
+    }
+    .frm_col .frm_wrap p{
+        font-size: 14px;
+    }
+    .frm_col .frm_wrap{
+        margin: 0 -7px;
+    }
+    .frm_col input{
+        font-size: 12px;
+        height: 35px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    .frm_textarea p{
+        font-size: 16px;
+        margin-top: 17px;
+    }
+    .frm_textarea textarea{
+        height: 140px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    .contact_menu p{
+        font-size: 16px;
+        margin-top: 18px;
+    }
+    .contact_menu_col{
+        margin-top: 17px;
+    }
+    .contact_menu_col ul li a{
+        font-size: 16px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    .contact_menu_col ul {
+        margin: 0 -7px;
+    }
+    .contact_menu_col ul li{
+        padding:0 7px;
+    }
+    .message_btn a {
+        font-size: 18px;
+        padding: 10px 0;
+        border-radius: 5px;
+        margin-top: 35px;
+    }
+    .footer_block{
+        margin-top: 17px;
+        padding: 12px 0 19px 0;
+    }
+    .footer_logo{
+        display: inline-block;
+        max-width: 100px;
+    }
+    .footer_menu li a{
+        font-size: 13px;
+    }
+    .footer_menu li + li {
+        margin-left: 10px;
+    }
+    .copy_text p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px){
+    .contact_wrapper{
+        padding: 30px 0 50px 0;
+    }
+    .contact_title h2{
+        font-size: 22px;
+    }
+    .contact_title p{
+        font-size: 14px;
+        margin-top: 11px;
+    }
+    .frm_wrapper .frm_title{
+        font-size: 16px;
+        margin-top: 41px;
+    }
+    .frm_col{
+        margin-top: 17px;
+    }
+    .frm_col .frm_wrap li{
+        padding: 0 7px;
+    }
+    .frm_col .frm_wrap p{
+        font-size: 12px;
+    }
+    .frm_col .frm_wrap{
+        margin: 0 -7px;
+    }
+    .frm_col input{
+        font-size: 12px;
+        height: 24px;
+        border-radius: 5px;
+        margin-top: 7px;
+    }
+    .frm_textarea p{
+        font-size: 14px;
+        margin-top: 17px;
+    }
+    .frm_textarea textarea{
+        height: 123px;
+        border-radius: 5px;
+        margin-top: 7px;
+    }
+    .contact_menu p{
+        font-size: 14px;
+        margin-top: 18px;
+    }
+    .contact_menu_col{
+        margin-top: 17px;
+    }
+    .contact_menu_col ul li a{
+        font-size: 14px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    .contact_menu_col ul {
+        margin: 0 -7px;
+    }
+    .contact_menu_col ul li{
+        padding:0 7px;
+    }
+    .message_btn a{
+        font-size: 16px;
+        padding: 10px 0;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+    .footer_block{
+        margin-top: 17px;
+        padding: 12px 0 19px 0;
+    }
+    .footer_logo{
+        display: inline-block;
+        max-width: 90px;
+    }
+    .footer_menu li a{
+        font-size: 10px;
+    }
+    .footer_menu li + li {
+        margin-left: 10px;
+    }
+    .copy_text p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px){
+    .contact_wrapper{
+        padding: 25px 0 42px 0;
+    }
+    .contact_title h2{
+        font-size: 20px;
+    }
+    .contact_title p{
+        font-size: 12px;
+        margin-top: 11px;
+    }
+    .frm_wrapper .frm_title{
+        font-size: 14px;
+        margin-top: 41px;
+    }
+    .frm_col{
+        margin-top: 17px;
+    }
+    .frm_col .frm_wrap li{
+        padding: 0 7px;
+    }
+    .frm_col .frm_wrap p{
+        font-size: 10px;
+    }
+    .frm_col .frm_wrap{
+        margin: 0 -7px;
+    }
+    .frm_col input{
+        font-size: 12px;
+        height: 24px;
+        border-radius: 5px;
+        margin-top: 7px;
+    }
+    .frm_textarea p{
+        font-size: 10px;
+        margin-top: 17px;
+    }
+    .frm_textarea textarea{
+        height: 123px;
+        border-radius: 5px;
+        margin-top: 7px;
+    }
+    .contact_menu p{
+        font-size: 12px;
+        margin-top: 18px;
+    }
+    .contact_menu_col{
+        margin-top: 17px;
+    }
+    .contact_menu_col ul li a{
+        font-size: 10px;
+        height: 24px;
+        border-radius: 5px;
+    }
+    .contact_menu_col ul {
+        margin: 0 -7px;
+    }
+    .contact_menu_col ul li{
+        padding:0 7px;
+    }
+    .message_btn a{
+        font-size: 14px;
+        padding: 10px 0;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+    .footer_block{
+        margin-top: 17px;
+        padding: 12px 0 19px 0;
+    }
+    .footer_menu li a{
+        font-size: 8px;
+    }
+    .footer_menu li + li {
+        margin-left: 10px;
+    }
+    .copy_text p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 374px){
+    .copy_text p{
+        font-size: 8px;
+    }
+}
